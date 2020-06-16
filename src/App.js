@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+// import logo from './logo.svg';
+import './Room.css';
+
+
 
 function App() {
+  const [isLit, setLit] =useState(true);
+  // const brightness=isLit ? "lit" : "dark";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"room " +(isLit ? "lit" : "dark")}>      
+          The room is {isLit ? "Light" : "Dark"}
+          <br/>
+          {/* <button onClick = {()=>console.log("button pressed")}>Toggle light</button> */}
+          <button onClick = {()=>{
+                                  setLit(!isLit)
+                                   console.log("button pressed");}}>Toggle light</button>
+          
     </div>
   );
 }

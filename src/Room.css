@@ -1,0 +1,17 @@
+
+#root,.room{
+    height: 500vh;
+    /* margin: 0; */
+  
+  }
+
+.lit{
+    background-color: white;
+    color: black;
+  }
+  
+  .dark{
+    background-color: black;
+    color: white;
+  }
+  

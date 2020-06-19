@@ -12,18 +12,3 @@
     monospace;
 } */
 
- .room{
-  height: 500px;
-  margin: 0;
-
-}
-
-.lit{
-  background-color: white;
-  color: black;
-}
-
-.dark{
-  background-color: black;
-  color: white;
-}
